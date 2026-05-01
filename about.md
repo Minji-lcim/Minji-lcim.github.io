@@ -13,5 +13,4 @@ title: "소개"
 - JavaScript
 - Jekyll
 
-
 <script src="/assets/js/hello.js"></script>
