@@ -11,6 +11,6 @@ author: 김민지
 
 오늘은 **Jekyll**을 활용해 첫 블로그 글을 씁니다. 
 
-![김민지의 책상 풍경](/assets/img/gettyimages-1488493940-170667a.jpg)
+![김민지의 책상 풍경](assets/img/gettyimages-1488493940-170667a.jpg)
 
 앞으로 수업에서 배운 내용을 이 곳에 정리할 예정입니다. 
