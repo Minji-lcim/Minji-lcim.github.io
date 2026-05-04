@@ -6,7 +6,7 @@ const target = "이";
 let count = 0;
 for (const ch of text) {
     if (ch === target) {
-        count ++;
+        count++;
     }
 }
 
