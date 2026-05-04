@@ -19,7 +19,7 @@ let total = 0; // 전체 텍스트가 몇 글자인지
 for (const ch of text) {
     if (ch !== " ") { //공백 문자가 아닌 경우
         total++;
-        if (ch == "가" && ch <= "힣") { // 란글인 경우
+        if (ch >= "가" && ch <= "힣") { // 란글인 경우
             hangul++;
         }
     }
