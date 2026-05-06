@@ -1,23 +1,23 @@
 // assets/js/freq.js
-function countChar(text, target) {
+function countChar(text_1, target) {
     let count = 0;
-    for (const ch of text) {
+    for (const ch of text_1) {
         if (ch === target) count++;
     }
     return count;
 }
 
-const text = "이상의 「날개」는 1936년에 발표된 단편소설이다.";
+const text_1 = "이상의 「날개」는 1936년에 발표된 단편소설이다.";
 const targets = ["이", "의", "날", "개", "소"];
 
-const counts = targets.map(t => countChar(text, t));
+const counts = targets.map(t => countChar(text_1, t));
 console.log(counts);
 
 for (let i = 0; i < targets.length; i++) {
 console.log(`'${targets[i]}': ${counts[i]}번`);
 }
 
-const frequent = targets.filter(t => countChar(text, t) >= 2);
+const frequent = targets.filter(t => countChar(text_1, t) >= 2);
 console.log(frequent);
 
 let maxIdx = 0;
