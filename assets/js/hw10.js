@@ -5,9 +5,9 @@
 function classifyEra(year) {
     if (year < 1910) {
         return "개화기 이전";
-    } else if (year >= 1910 && year < 1945) {
+    } else if (1910 <= year < 1945) {
         return "일제강점기";
-    } else if (year >= 1945 && year < 1990) {
+    } else if (1945 <= year < 1990) {
         return "해방이후 ~ 현대";
     } else {return "동시대";}
 }
