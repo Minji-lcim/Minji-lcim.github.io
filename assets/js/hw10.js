@@ -5,9 +5,9 @@
 function classifyEra(year) {
     if (year < 1910) {
         return "개화기 이전"
-    } else if (1910 <= year < 1945) {
+    } else if (1910 <= year && year < 1945) {
         return "일제강점기"
-    } else if (1945 <= year < 1990) {
+    } else if (1945 <= year && year < 1990) {
         return "해방이후 ~ 현대"
     } else {return "동시대"}
 }
@@ -31,8 +31,8 @@ console.log(titled)
 const long = works.filter(w => w.length >= 3);
 console.log(long)
 // 4
-for (let i = 1; i <= long.length; i++) {
-    console.log(`${i}번째 작품: ${long[i - 1]}`);
+for (let i = 0; i < long.length; i++) {
+    console.log(`${i+1}번째 작품: ${long[i]}`);
 }
 
 
