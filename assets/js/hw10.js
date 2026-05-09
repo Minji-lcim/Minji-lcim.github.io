@@ -32,7 +32,7 @@ const long = works.filter(w => w.length >= 3);
 console.log(long)
 // 4
 for (let i = 1; i <= long.length; i++) {
-    console.log(`${i}번째 작품: ${long[i]}`);
+    console.log(`${i}번째 작품: ${long[i - 1]}`);
 }
 
 
