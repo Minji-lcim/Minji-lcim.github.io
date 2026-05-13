@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault(); //새로고침 막기
 
     const text = textBox.value;
-    const targets = targetBox.value.split("","").map(s => s.trim());
+    const targets = targetBox.value.split(",").map(s => s.trim());
     const counts = targets.map(t => countChar(text, t));
 
     drawList(targets, counts);
