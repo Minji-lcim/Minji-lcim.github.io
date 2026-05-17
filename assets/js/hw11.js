@@ -11,7 +11,7 @@ themeBtn.addEventListener("click", () => {q1Box.classList.toggle("dark");
         themeBtn.textContent = "라이트 모드";
     } else {
         themeBtn.textContent = "다크 모드";
-    }});
+}});
 
 
 // Q2
@@ -28,4 +28,4 @@ input.addEventListener("input", (e) => {
         q2Warn.style.color = "crimson";
     } else {
         q2Warn.textContent = "";
-    }});
+}});
