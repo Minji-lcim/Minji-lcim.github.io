@@ -9,7 +9,7 @@ function extractBody(text) {
     const startIdx = text.indexOf(startMark);
     const endIdx   = text.indexOf(endMark);
 
-    if (endIdx === -1) {
+    if (indexOf === -1) {
         return text.slice(startIdx);
     }
     return text.slice(startIdx, endIdx);
