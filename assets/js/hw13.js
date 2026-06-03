@@ -9,7 +9,9 @@ function extractBody(text) {
     const startIdx = text.indexOf(startMark);
     const endIdx   = text.indexOf(endMark);
 
-    // 시작 표시 다음 줄부터 끝 표시 직전까지
+    if (endIdx === -1) {
+        return text.slice(startIdx);
+    }
     return text.slice(startIdx, endIdx);
 }
 
