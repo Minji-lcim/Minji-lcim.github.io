@@ -9,7 +9,7 @@ function extractBody(text) {
     const startIdx = text.indexOf(startMark);
     const endIdx   = text.indexOf(endMark);
 
-    if (indexOf === -1) {
+    if (endIdx === -1) {
         return text.slice(startIdx);
     }
     return text.slice(startIdx, endIdx);
@@ -46,10 +46,10 @@ function drawChart(selector, top, color) {
     new Chart(canvas, {
         type: "bar",
         data: {
-        labels: top.map(item => item[0]),
-        datasets: [{
-            label: "빈도", data: top.map(item => item[1]),
-            backgroundColor: color,
+            labels: top.map(item => item[0]),
+            datasets: [{
+                label: "빈도", data: top.map(item => item[1]),
+                backgroundColor: color,
             }],
         },
         options: {
@@ -89,6 +89,5 @@ Promise.all([
   const dracTop = analyze(dracText, stopwords);
 
   drawChart("#chart-frankenstein", frankTop, "rgba(40, 167, 69, 0.6)");
-  
   drawChart("#chart-dracula", dracTop, "rgba(220, 53, 69, 0.6)");
-})
+});
