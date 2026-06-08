@@ -9,4 +9,5 @@ author:
 header_pages: 
   - about.md
   - project.md
-  - js-test.md
+  - compare.md
+  - analyzer.md
