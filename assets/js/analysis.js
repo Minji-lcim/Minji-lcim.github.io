@@ -16,7 +16,7 @@ function countWords(words) {
 
 function topN(counts, n) {
     return Object.entries(counts)
-        .sort((a,b) => b[1]- a[1])
+        .sort((a,b) => b[1] - a[1])
         .slice(0, n);
 }
 
@@ -35,8 +35,7 @@ function drawChart(selector, top, color) {
         options: {
             indexAxis:"y",
             maintainAspectRatio: false,
-
-        scales: { x: { beginAtZero: true }, y: { ticks: { autoSkip: false } } },
+            scales: { x: { beginAtZero: true }, y: { ticks: { autoSkip: false } } },
         },
 
     });

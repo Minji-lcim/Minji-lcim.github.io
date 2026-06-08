@@ -18,5 +18,5 @@ button.addEventListener("click", () => {
 
         if (resultChart) resultChart.destroy();
         resultChart = drawChart("#result-chart", top, "rgba(40, 167, 69, 0.6)");
-        });
+    });
 });

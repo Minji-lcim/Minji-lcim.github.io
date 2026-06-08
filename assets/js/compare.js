@@ -23,7 +23,8 @@ Promise.all([
     fetch("/data/stopwords-en.txt").then(r => r.text()),
 ]).then(([scarletText,houndText, stopwordsText]) => {
     const stopwords = stopwordsText.split(/\s+/).filter(w=> w.length > 0);
-    drawChart("#chart-scarlet", analyze(scarletText, stopwords),"rgba(220, 53, 69, 0.6)")
+    
+    drawChart("#chart-scarlet", analyze(scarletText, stopwords),"rgba(220, 53, 69, 0.6)");
 
     drawChart("#chart-hound",analyze(houndText, stopwords),"rgba(54, 162, 235, 0.6)");
 });
